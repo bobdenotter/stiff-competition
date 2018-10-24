@@ -25,8 +25,14 @@ class Table extends AbstractController
     {
         $order = $request->get('order', 'name');
 
+        if (in_array($order, ['forks', 'stargazers', 'updated', 'open_issues', 'opened_recently', 'closed_recently', 'commits_year', 'commits_month'])) {
+            $data = $this->config->sortByDesc($order);
+        } else {
+            $data = $this->config->sortBy($order);
+        }
+
         $context = [
-            'data' => $this->config->sortBy($order)
+            'data' => $data
         ];
 
         return $this->render('index.html.twig', $context);

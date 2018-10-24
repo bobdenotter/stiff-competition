@@ -12,7 +12,7 @@
     <tr>
         {% for columnname, column in header %}
             <th class="col-{{ columnname }}"
-            >{{ columnname|replace({'_': ' '}) }}</th>
+            ><a href="?order={{ columnname }}">{{ columnname|replace({'_': ' '}) }}</a></th>
         {% endfor %}
     </tr>
     </thead>

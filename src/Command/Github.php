@@ -80,11 +80,12 @@ HELP
                 $reponame = $this->getReponame($item['repository']);
 
                 if (empty($reponame)) {
+                    echo " - No repository defined \n";
                     continue;
                 }
 
                 if ($item['updated'] == date('Y-m-d')) {
-                    echo " - Updated today already ";
+                    echo " - Updated today already \n";
                     continue;
                 }
 
@@ -132,13 +133,16 @@ HELP
 
         $this->objectManager->flush();
 
-        $header = array_keys($results[0]);
+        if (count($results) > 0) {
 
-        $io = new SymfonyStyle($input, $output);
-        $io->table(
-            $header,
-            $results
-        );
+            $header = array_keys($results[0]);
+
+            $io = new SymfonyStyle($input, $output);
+            $io->table(
+                $header,
+                $results
+            );
+        }
 
         $this->configuration->set($config);
         $this->configuration->write();
