@@ -2,16 +2,41 @@
 
 {% block body %}
 
-    {{ dump(data) }}
+    <h1>Stiff competition!</h1>
 
-    <table>
+    {% set header = data|first %}
+
+    <table class="table table-striped table-sm" id="competition">
+
+    <thead>
+    <tr>
+        {% for columnname, column in header %}
+            <th class="col-{{ columnname }}"
+            >{{ columnname|replace({'_': ' '}) }}</th>
+        {% endfor %}
+    </tr>
+    </thead>
+
     {% for row in data %}
+
         <tr>
-        {% for column in row %}
-            <td>{{ column }}</td>
+            {% for columnname, column in header %}
+            <td class="col-{{ columnname }}">
+            {% if columnname in ['site', 'repository', 'docs'] %}
+                <a href="{{ row[columnname] }}">{{ row[columnname]|truncate(24) }}</a>
+            {% else %}
+                {{ row[columnname]|default('-')|join(', ')|truncate(120) }}
+            {% endif %}
+            </td>
         {% endfor %}
         </tr>
     {% endfor %}
     </table>
 
+    {#{{ dump(data) }}#}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
 {% endblock %}

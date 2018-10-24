@@ -113,6 +113,9 @@
     "monolog/monolog": {
         "version": "1.23.0"
     },
+    "nesbot/carbon": {
+        "version": "2.4.1"
+    },
     "nikic/php-parser": {
         "version": "v4.1.0"
     },
@@ -442,6 +445,15 @@
     },
     "tightenco/collect": {
         "version": "v5.7.9"
+    },
+    "twig/extensions": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "ddb2e0a77773b7fd75d8d649545f174e664500ab"
+        }
     },
     "twig/twig": {
         "version": "v2.5.0"

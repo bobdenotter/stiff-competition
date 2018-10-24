@@ -4,8 +4,13 @@ namespace App\Command;
 
 
 use App\Config\Configuration;
+use App\Entity\Statistics;
+use Carbon\Carbon;
 use Cocur\Slugify\Slugify;
+use DateTime;
+use Doctrine\Common\Persistence\ObjectManager;
 use Github\Client;
+use Github\Exception\ApiLimitExceedException;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -23,10 +28,13 @@ class Github extends Command
     /** @var Client */
     private $client;
 
-    public function __construct(Configuration $configuration)
+    /** @var ObjectManager */
+    private $objectManager;
+
+    public function __construct(Configuration $configuration, ObjectManager $objectManager)
     {
         parent::__construct();
-        $this->configuration = $configuration->get();
+        $this->configuration = $configuration;
         $this->client = new Client();
 
         $token = getenv('GITHUB_SECRET');
@@ -35,6 +43,7 @@ class Github extends Command
         }
         $this->client->authenticate($token, null, Client::AUTH_HTTP_TOKEN);
 
+        $this->objectManager = $objectManager;
     }
 
     /**
@@ -57,42 +66,71 @@ HELP
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        dump($this->configuration);
+        $config = $this->configuration->get();
 
         $slugify = Slugify::create();
 
         $results = [];
-        foreach ($this->configuration as $item) {
 
-            $reponame = $this->getReponame($item['repository']);
+        try {
+            foreach (collect($config)->sortBy('updated') as $key => $item) {
 
-            echo ".";
+                echo " . " . $item['name'];
 
-            $info = $this->getInfo($reponame);
+                $reponame = $this->getReponame($item['repository']);
 
-            $commits = $this->getCommits($reponame);
+                if (empty($reponame)) {
+                    continue;
+                }
 
-            $row = [
-                'name' => $item['name'],
-                'slug' => $slugify->slugify($item['name']),
-                'description' => $info['description'],
-                'open_issues' => $info['open_issues_count'],
-                'opened_recently' => $this->getRecentlyOpenedIssues($reponame),
-                'closed_recently' => $this->getRecentlyClosedIssues($reponame),
-                'stargazers' => $info['stargazers_count'],
-                'forks' => $info['forks_count'],
-                'license' => $info['license']['spdx_id'],
-                'commits_year' => $commits['year'],
-                'commits_month' => $commits['month'],
-            ];
+                if ($item['updated'] == date('Y-m-d')) {
+                    echo " - Updated today already ";
+                    continue;
+                }
 
+                $info = $this->getInfo($reponame);
 
-            $results[] = $row;
+                $commits = $this->getCommits($reponame);
+
+                $row = [
+                    'name' => $item['name'],
+                    'open_issues' => $info['open_issues_count'],
+                    'opened_recently' => $this->getRecentlyOpenedIssues($reponame),
+                    'closed_recently' => $this->getRecentlyClosedIssues($reponame),
+                    'stargazers' => $info['stargazers_count'],
+                    'forks' => $info['forks_count'],
+                    'license' => $info['license']['spdx_id'],
+                    'commits_year' => $commits['year'],
+                    'commits_month' => $commits['month'],
+                    'updated' => date('Y-m-d')
+                ];
+
+                $statistics = new Statistics();
+                $statistics->setName($slugify->slugify($item['name']))
+                    ->setOpenIssues($row['open_issues'])
+                    ->setOpenedRecently($row['opened_recently'])
+                    ->setClosedRecently($row['closed_recently'])
+                    ->setStargazers($row['stargazers'])
+                    ->setForks($row['forks'])
+                    ->setCommitsYear($row['commits_year'])
+                    ->setCommitsMonth($row['commits_month'])
+                    ->setTimestamp(Carbon::now());
+
+                $this->objectManager->persist($statistics);
+
+                $config[$key] = array_merge($item, $row);
+                $config[$key]['description'] = $info['description'];
+                $config[$key]['topics'] = $this->getTopics($reponame);
+
+                $results[] = $row;
+            }
+        } catch (ApiLimitExceedException $exception) {
+            echo "\nGithub API Limit reached!!\n";
         }
 
         echo "\n";
 
-        dump($results);
+        $this->objectManager->flush();
 
         $header = array_keys($results[0]);
 
@@ -101,6 +139,10 @@ HELP
             $header,
             $results
         );
+
+        $this->configuration->set($config);
+        $this->configuration->write();
+
     }
 
     private function getReponame($url)
@@ -108,15 +150,6 @@ HELP
         $url = parse_url($url);
         return ltrim($url['path'], '/');
     }
-
-//    private function getTotalOpenIssues($reponame)
-//    {
-//        $query = sprintf('repo:%s is:open', $reponame);
-//        $issues = $this->client->api('search')->issues($query);
-//
-//        return $issues['total_count'];
-//    }
-
 
     private function getRecentlyOpenedIssues($reponame)
     {
@@ -147,6 +180,16 @@ HELP
         return $this->client->api('repo')->show($reponame[0], $reponame[1]);
     }
 
+
+    private function getTopics($reponame)
+    {
+        $reponame = explode('/', $reponame);
+
+        $topics = $this->client->api('repo')->topics($reponame[0], $reponame[1]);
+
+        return $topics['names'];
+    }
+
     private function getCommits($reponame)
     {
         $reponame = explode('/', $reponame);
@@ -161,5 +204,4 @@ HELP
         return $res;
 
     }
-
 }
