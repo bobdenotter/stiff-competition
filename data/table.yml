@@ -478,5 +478,19 @@
     updated: '2018-10-24'
     description: 'ProcessWire 3.x is a friendly and powerful open source CMS with a strong API. '
     topics: [processwire, cms, cmf, php]
-
-# Kunstmaan
+-
+    name: 'Kunstmaan Bundles'
+    site: 'https://bundles.kunstmaan.be/'
+    repository: 'https://github.com/Kunstmaan/KunstmaanBundlesCMS'
+    docs: 'https://kunstmaanbundlescms.readthedocs.io/en/latest/'
+    open_issues: 112
+    opened_recently: 14
+    closed_recently: 6
+    stargazers: 284
+    forks: 174
+    license: MIT
+    commits_year: 331
+    commits_month: 0
+    updated: '2018-10-24'
+    description: 'An advanced yet user-friendly content management system, based on the full stack Symfony framework combined with a whole host of community bundles. It provides a full featured, multi-language CMS system with an innovative page and form assembling process, versioning, workflow, translation and media managers and much more.'
+    topics: {  }

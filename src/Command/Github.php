@@ -76,9 +76,7 @@ HELP
             foreach (collect($config)->sortBy('updated') as $key => $item) {
                 echo ' . ' . $item['name'];
 
-                $reponame = $this->getReponame($item['repository']);
-
-                if (empty($reponame)) {
+                if (empty($item['repository'])) {
                     echo " - No repository defined \n";
                     continue;
                 }
@@ -87,6 +85,8 @@ HELP
                     echo " - Updated today already \n";
                     continue;
                 }
+
+                $reponame = $this->getReponame($item['repository']);
 
                 $info = $this->getInfo($reponame);
 

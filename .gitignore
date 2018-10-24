@@ -1,4 +1,5 @@
 .idea/
+screenshots/
 
 ###> symfony/framework-bundle ###
 /.env
