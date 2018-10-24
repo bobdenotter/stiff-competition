@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Config;
 
 use Symfony\Component\Yaml\Yaml;
@@ -37,7 +39,7 @@ class Configuration
     }
 
     /**
-     * Write Yaml data
+     * Write Yaml data.
      */
     public function write()
     {

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Controller;
 
 use App\Config\Configuration;
@@ -25,14 +27,14 @@ class Table extends AbstractController
     {
         $order = $request->get('order', 'name');
 
-        if (in_array($order, ['forks', 'stargazers', 'updated', 'open_issues', 'opened_recently', 'closed_recently', 'commits_year', 'commits_month'])) {
+        if (in_array($order, ['forks', 'stargazers', 'updated', 'open_issues', 'opened_recently', 'closed_recently', 'commits_year', 'commits_month'], true)) {
             $data = $this->config->sortByDesc($order);
         } else {
             $data = $this->config->sortBy($order);
         }
 
         $context = [
-            'data' => $data
+            'data' => $data,
         ];
 
         return $this->render('index.html.twig', $context);
