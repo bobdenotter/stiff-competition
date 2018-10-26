@@ -92,6 +92,12 @@ HELP
 
                 $commits = $this->getCommits($reponame);
 
+		// Sometimes the commits aren't fetched correctly. If so, skip.
+		if ( (int) $commits['year'] === 0) {
+                    echo " - No commits were fetched \n";
+                    continue;
+		}
+
                 $row = [
                     'name' => $item['name'],
                     'open_issues' => $info['open_issues_count'],
