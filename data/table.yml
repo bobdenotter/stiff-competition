@@ -494,3 +494,35 @@
     updated: '2018-10-26'
     description: 'An advanced yet user-friendly content management system, based on the full stack Symfony framework combined with a whole host of community bundles. It provides a full featured, multi-language CMS system with an innovative page and form assembling process, versioning, workflow, translation and media managers and much more.'
     topics: {  }
+-
+    name: 'Bolt (legacy)'
+    site: 'https://bolt.cm'
+    repository: 'https://github.com/bolt/bolt'
+    docs: 'https://docs.bolt.cm'
+    open_issues: 76
+    opened_recently: 13
+    closed_recently: 20
+    stargazers: 3787
+    forks: 797
+    license: MIT
+    commits_year: 431
+    commits_month: 10
+    updated: '2018-10-26'
+    description: 'Bolt is a simple CMS written in PHP. It is based on Silex and Symfony components, uses Twig and either SQLite, MySQL or PostgreSQL.'
+    topics: [php, cms, silex, symfony, bolt, cmf, symfony-application, twig, theme, mysql, sqlite, postgresql]
+-
+    name: Kirby
+    site: 'https://getkirby.com/'
+    repository: 'https://github.com/getkirby/kirby'
+    docs: 'https://getkirby.com/docs'
+    open_issues: 118
+    opened_recently: 1
+    closed_recently: 2
+    stargazers: 527
+    forks: 84
+    license: NOASSERTION
+    commits_year: 32
+    commits_month: 0
+    updated: '2018-10-26'
+    description: 'Kirby''s core system folder'
+    topics: {  }
