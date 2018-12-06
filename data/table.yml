@@ -65,7 +65,7 @@
 -
     name: Sulu
     site: 'https://sulu.io/en'
-    repository: 'https://github.com/sulu/sulu-standard'
+    repository: 'https://github.com/sulu/sulu'
     docs: 'http://docs.sulu.io/en/latest/'
     open_issues: 98
     opened_recently: 0
