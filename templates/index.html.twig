@@ -4,15 +4,27 @@
 
     <h1>Stiff competition!</h1>
 
-    {% set header = data|first %}
+    {% set header = {
+    'name': 'Name',
+    'site': 'Site',
+    'repository': 'Repository',
+    'docs': 'Docs',
+    'open_issues': 'Open Issues',
+    'opened_recently': 'Recently opened / closed',
+    'stargazers': 'Stargazers / Forks',
+    'commits_year': 'Commits per Year / Month',
+    'description': 'Description',
+    'topics': 'Topics'
+} %}
 
     <table class="table table-striped table-sm" id="competition">
 
     <thead>
+        
     <tr>
         {% for columnname, column in header %}
             <th class="col-{{ columnname }}"
-            ><a href="?order={{ columnname }}">{{ columnname|replace({'_': ' '}) }}</a></th>
+            ><a href="?order={{ columnname }}">{{ column }}</a></th>
         {% endfor %}
     </tr>
     </thead>
@@ -26,6 +38,15 @@
                 <a href="{{ row[columnname] }}">{{ row[columnname]|truncate(24) }}</a>
             {% else %}
                 {{ row[columnname]|default('-')|join(', ')|truncate(120) }}
+            {% endif %}
+            {% if columnname == 'opened_recently' %}
+                / {{ row['closed_recently'] }}
+            {% endif %}
+            {% if columnname == 'stargazers' %}
+                / {{ row['forks'] }}
+            {% endif %}
+            {% if columnname == 'commits_year' %}
+                / {{ row['commits_month'] }}
             {% endif %}
             </td>
         {% endfor %}

@@ -3,15 +3,15 @@
     site: 'https://getgrav.org/'
     repository: 'https://github.com/getgrav/grav'
     docs: 'https://learn.getgrav.org/'
-    open_issues: 265
-    opened_recently: 9
-    closed_recently: 34
-    stargazers: 9802
-    forks: 981
+    open_issues: 270
+    opened_recently: 13
+    closed_recently: 24
+    stargazers: 9906
+    forks: 995
     license: MIT
-    commits_year: 380
-    commits_month: 13
-    updated: '2018-11-20'
+    commits_year: 356
+    commits_month: 10
+    updated: '2018-12-07'
     description: 'Modern, Crazy Fast, Ridiculously Easy and Amazingly Powerful Flat-File CMS'
     topics: [php, cms, flat-file, content, website, grav, content-management, twig, yaml, symfony, doctrine, php7, website-builder, website-generation, markdown]
 -
@@ -19,15 +19,15 @@
     site: 'https://bolt.cm'
     repository: 'https://github.com/bolt/four'
     docs: 'https://docs.bolt.cm'
-    open_issues: 33
-    opened_recently: 32
-    closed_recently: 90
-    stargazers: 21
-    forks: 12
+    open_issues: 64
+    opened_recently: 54
+    closed_recently: 78
+    stargazers: 28
+    forks: 13
     license: MIT
-    commits_year: 576
-    commits_month: 213
-    updated: '2018-11-20'
+    commits_year: 632
+    commits_month: 136
+    updated: '2018-12-07'
     description: '🍀 Bolt 4 prototype'
     topics: [php, cms, symfony, opensource, content-management-system, decoupled, headless, api, vue, twig, doctrine, multilingual]
 -
@@ -35,15 +35,15 @@
     site: 'https://sculpin.io/'
     repository: 'https://github.com/sculpin/sculpin'
     docs: 'https://sculpin.io/documentation/'
-    open_issues: 84
-    opened_recently: 0
-    closed_recently: 5
-    stargazers: 1277
+    open_issues: 85
+    opened_recently: 1
+    closed_recently: 2
+    stargazers: 1280
     forks: 180
     license: MIT
     commits_year: 62
-    commits_month: 5
-    updated: '2018-11-20'
+    commits_month: 3
+    updated: '2018-12-07'
     description: 'Sculpin — Static Site Generator'
     topics: {  }
 -
@@ -51,47 +51,47 @@
     site: 'https://wagtail.io/'
     repository: 'https://github.com/wagtail/wagtail'
     docs: 'http://docs.wagtail.io/en/v2.3/'
-    open_issues: 649
-    opened_recently: 31
-    closed_recently: 83
-    stargazers: 6230
-    forks: 1369
-    license: NOASSERTION
-    commits_year: 992
-    commits_month: 29
-    updated: '2018-11-20'
+    open_issues: 647
+    opened_recently: 27
+    closed_recently: 45
+    stargazers: 6312
+    forks: 1387
+    license: ''
+    commits_year: 940
+    commits_month: 32
+    updated: '2018-12-07'
     description: 'A Django content management system focused on flexibility and user experience'
     topics: [python, django, cms, wagtail]
 -
     name: Sulu
     site: 'https://sulu.io/en'
-    repository: 'https://github.com/sulu/sulu-standard'
+    repository: 'https://github.com/sulu/sulu'
     docs: 'http://docs.sulu.io/en/latest/'
-    open_issues: 98
-    opened_recently: 0
-    closed_recently: 3
-    stargazers: 644
-    forks: 123
+    open_issues: 523
+    opened_recently: 23
+    closed_recently: 50
+    stargazers: 284
+    forks: 125
     license: MIT
-    commits_year: 24
-    commits_month: 0
-    updated: '2018-11-20'
-    description: 'Sulu CMS Standard Edition'
-    topics: [php, symfony, sulu, sulu-standard, cms, cmf]
+    commits_year: 472
+    commits_month: 39
+    updated: '2018-12-07'
+    description: 'Sulu core bundles & components'
+    topics: [php, symfony, sulu, cms, cmf]
 -
     name: Unite
     site: 'https://www.unitecms.io/'
     repository: 'https://github.com/unite-cms/unite-cms'
     docs: 'https://www.unitecms.io/docs.html'
-    open_issues: 44
-    opened_recently: 18
-    closed_recently: 43
-    stargazers: 82
+    open_issues: 36
+    opened_recently: 8
+    closed_recently: 50
+    stargazers: 89
     forks: 8
     license: GPL-3.0
-    commits_year: 604
-    commits_month: 70
-    updated: '2018-11-20'
+    commits_year: 630
+    commits_month: 42
+    updated: '2018-12-07'
     description: 'Really flexible headless CMS, built on top of Symfony and GraphQL.'
     topics: [cms, graphql, php, content, content-management, symfony, headless, decoupled, headless-cms]
 -
@@ -99,15 +99,15 @@
     site: 'https://www.roadiz.io/'
     repository: 'https://github.com/roadiz/roadiz'
     docs: 'https://docs.roadiz.io/en/latest/'
-    open_issues: 35
-    opened_recently: 1
+    open_issues: 36
+    opened_recently: 2
     closed_recently: 0
     stargazers: 328
     forks: 28
-    license: NOASSERTION
-    commits_year: 320
-    commits_month: 17
-    updated: '2018-11-20'
+    license: ''
+    commits_year: 308
+    commits_month: 10
+    updated: '2018-12-07'
     description: 'Roadiz is a polymorphic CMS based on a node system which can handle many types of services.'
     topics: [cms, roadiz, php, theme, source]
 -
@@ -115,15 +115,15 @@
     site: 'https://www.silverstripe.org/'
     repository: 'https://github.com/silverstripe/silverstripe-framework'
     docs: 'https://docs.silverstripe.org/en/4/'
-    open_issues: 480
-    opened_recently: 63
-    closed_recently: 90
-    stargazers: 612
-    forks: 712
+    open_issues: 493
+    opened_recently: 43
+    closed_recently: 59
+    stargazers: 615
+    forks: 716
     license: BSD-3-Clause
-    commits_year: 838
+    commits_year: 815
     commits_month: 34
-    updated: '2018-11-20'
+    updated: '2018-12-07'
     description: 'SilverStripe Framework, the MVC framework that powers SilverStripe CMS'
     topics: {  }
 -
@@ -131,15 +131,15 @@
     site: 'https://octobercms.com/'
     repository: 'https://github.com/octobercms/october'
     docs: 'https://octobercms.com/docs/cms/themes'
-    open_issues: 374
-    opened_recently: 18
-    closed_recently: 43
-    stargazers: 7665
-    forks: 1829
+    open_issues: 350
+    opened_recently: 26
+    closed_recently: 72
+    stargazers: 7715
+    forks: 1848
     license: MIT
-    commits_year: 210
+    commits_year: 198
     commits_month: 1
-    updated: '2018-11-20'
+    updated: '2018-12-07'
     description: 'Free, open-source, self-hosted CMS platform based on the Laravel PHP Framework.'
     topics: [cms, framework, cmf, laravel, php, platform, octobercms, backend]
 -
@@ -147,15 +147,15 @@
     site: 'https://sylius.com/'
     repository: 'https://github.com/Sylius/Sylius'
     docs: 'https://docs.sylius.com/en/1.3/'
-    open_issues: 243
-    opened_recently: 38
-    closed_recently: 71
-    stargazers: 4567
-    forks: 1447
+    open_issues: 259
+    opened_recently: 53
+    closed_recently: 92
+    stargazers: 4595
+    forks: 1455
     license: MIT
-    commits_year: 915
-    commits_month: 48
-    updated: '2018-11-20'
+    commits_year: 942
+    commits_month: 58
+    updated: '2018-12-07'
     description: 'Open Source eCommerce Framework on top of Symfony'
     topics: [sylius, php, symfony, ecommerce, ecommerce-platform, shop, shopping-cart, framework]
 -
@@ -179,15 +179,15 @@
     site: 'https://www.pyrocms.com/'
     repository: 'https://github.com/pyrocms/pyrocms'
     docs: 'https://pyrocms.com/documentation'
-    open_issues: 136
-    opened_recently: 5
-    closed_recently: 72
-    stargazers: 2844
+    open_issues: 141
+    opened_recently: 8
+    closed_recently: 5
+    stargazers: 2854
     forks: 946
-    license: NOASSERTION
+    license: ''
     commits_year: 64
-    commits_month: 2
-    updated: '2018-11-20'
+    commits_month: 3
+    updated: '2018-12-07'
     description: 'Pyro is an experienced and powerful Laravel PHP CMS.'
     topics: [cms, framework, cmf, pyrocms, laravel, php, platform]
 -
@@ -195,15 +195,15 @@
     site: 'https://pagekit.com/'
     repository: 'https://github.com/pagekit/pagekit'
     docs: 'https://pagekit.com/docs'
-    open_issues: 139
-    opened_recently: 3
-    closed_recently: 1
-    stargazers: 4956
-    forks: 572
+    open_issues: 141
+    opened_recently: 5
+    closed_recently: 0
+    stargazers: 4971
+    forks: 575
     license: MIT
     commits_year: 14
     commits_month: 4
-    updated: '2018-11-20'
+    updated: '2018-12-07'
     description: 'Pagekit CMS'
     topics: [pagekit, php, cms, content, content-management, website, vue, symfony]
 -
@@ -211,31 +211,31 @@
     site: 'https://craftcms.com/'
     repository: 'https://github.com/craftcms/cms'
     docs: 'https://docs.craftcms.com/v3/'
-    open_issues: 757
-    opened_recently: 21
-    closed_recently: 60
-    stargazers: 1407
-    forks: 220
-    license: NOASSERTION
-    commits_year: 2411
-    commits_month: 64
-    updated: '2018-11-20'
-    description: 'Flexible and scalable CMS for creating bespoke digital experiences on the web and beyond.'
+    open_issues: 761
+    opened_recently: 19
+    closed_recently: 71
+    stargazers: 1438
+    forks: 231
+    license: ''
+    commits_year: 2342
+    commits_month: 80
+    updated: '2018-12-07'
+    description: 'Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond.'
     topics: [cms, craftcms, yii2, php, twig, php7, content-management, craft3]
 -
     name: Strapi
     site: 'https://strapi.io/'
     repository: 'https://github.com/strapi/strapi'
     docs: 'https://strapi.io/documentation/3.x.x/'
-    open_issues: 162
-    opened_recently: 58
-    closed_recently: 203
-    stargazers: 9229
-    forks: 1034
+    open_issues: 150
+    opened_recently: 53
+    closed_recently: 231
+    stargazers: 9566
+    forks: 1091
     license: MIT
-    commits_year: 2355
-    commits_month: 56
-    updated: '2018-11-20'
+    commits_year: 2298
+    commits_month: 74
+    updated: '2018-12-07'
     description: '🚀 Open source Node.js Headless CMS to easily build customisable APIs'
     topics: [strapi, nodejs, api, dashboard, javascript, es6, graphql, rest, koa, koa2, cms, headless-cms]
 -
@@ -243,31 +243,31 @@
     site: 'https://ghost.org/'
     repository: 'https://github.com/TryGhost/Ghost'
     docs: 'https://docs.ghost.org/'
-    open_issues: 176
-    opened_recently: 49
-    closed_recently: 113
-    stargazers: 27981
-    forks: 6029
+    open_issues: 164
+    opened_recently: 24
+    closed_recently: 131
+    stargazers: 28126
+    forks: 6075
     license: MIT
-    commits_year: 795
-    commits_month: 46
-    updated: '2018-11-20'
+    commits_year: 778
+    commits_month: 36
+    updated: '2018-12-07'
     description: 'The platform for professional publishers'
-    topics: [journalism, publishing, blogging, javascript, web-application, cms, nodejs, ember]
+    topics: [journalism, publishing, blogging, javascript, web-application, cms, nodejs, ember, ghost]
 -
     name: VuePress
     site: 'https://vuepress.vuejs.org/'
     repository: 'https://github.com/vuejs/vuepress'
     docs: 'https://vuepress.vuejs.org/guide/'
-    open_issues: 125
-    opened_recently: 18
-    closed_recently: 77
-    stargazers: 9965
-    forks: 1182
+    open_issues: 134
+    opened_recently: 21
+    closed_recently: 85
+    stargazers: 10243
+    forks: 1256
     license: MIT
-    commits_year: 1162
-    commits_month: 131
-    updated: '2018-11-20'
+    commits_year: 1225
+    commits_month: 112
+    updated: '2018-12-07'
     description: '📝 Minimalistic Vue-powered static site generator'
     topics: {  }
 -
@@ -277,13 +277,13 @@
     docs: 'https://codex.wordpress.org/Main_Page'
     open_issues: 0
     opened_recently: 0
-    closed_recently: 2
-    stargazers: 11650
-    forks: 7095
-    license: NOASSERTION
-    commits_year: 825
+    closed_recently: 1
+    stargazers: 11724
+    forks: 7146
+    license: ''
+    commits_year: 776
     commits_month: 0
-    updated: '2018-11-20'
+    updated: '2018-12-07'
     description: 'WordPress, Git-ified. Synced via SVN every 15 minutes, including branches and tags! This repository is just a mirror of the WordPress subversion repository. Please do not send pull requests. Submit patches to https://core.trac.wordpress.org/ instead.'
     topics: {  }
 -
@@ -291,15 +291,15 @@
     site: 'https://www.couchcms.com/'
     repository: 'https://github.com/CouchCMS/CouchCMS'
     docs: 'https://docs.couchcms.com/'
-    open_issues: 15
-    opened_recently: 1
-    closed_recently: 5
-    stargazers: 205
+    open_issues: 17
+    opened_recently: 2
+    closed_recently: 9
+    stargazers: 210
     forks: 57
     license: null
-    commits_year: 71
-    commits_month: 1
-    updated: '2018-11-20'
+    commits_year: 76
+    commits_month: 7
+    updated: '2018-12-07'
     description: 'Simple Open-Source CMS for designers'
     topics: {  }
 -
@@ -324,14 +324,14 @@
     repository: 'https://github.com/netlify/netlify-cms'
     docs: 'https://www.netlifycms.org/docs/intro/'
     open_issues: 365
-    opened_recently: 29
-    closed_recently: 87
-    stargazers: 6781
-    forks: 972
+    opened_recently: 27
+    closed_recently: 67
+    stargazers: 6942
+    forks: 1001
     license: MIT
-    commits_year: 608
-    commits_month: 33
-    updated: '2018-11-20'
+    commits_year: 584
+    commits_month: 48
+    updated: '2018-12-07'
     description: 'A CMS for Static Site Generators'
     topics: [cms, jamstack, react, static, javascript, npm-package, git, github]
 -
@@ -339,15 +339,15 @@
     site: 'https://www.fork-cms.com/'
     repository: 'https://github.com/forkcms/forkcms'
     docs: 'https://docs.fork-cms.com/documentation/detail/installation/installation'
-    open_issues: 73
-    opened_recently: 6
-    closed_recently: 10
-    stargazers: 1034
-    forks: 284
+    open_issues: 78
+    opened_recently: 9
+    closed_recently: 5
+    stargazers: 1036
+    forks: 283
     license: MIT
-    commits_year: 419
-    commits_month: 4
-    updated: '2018-11-20'
+    commits_year: 406
+    commits_month: 0
+    updated: '2018-12-07'
     description: 'Fork is an easy to use open source CMS using Symfony Components.'
     topics: [cms, symfony, fork, fork-cms, forkcms, php, doctrine]
 -
@@ -358,12 +358,12 @@
     open_issues: 0
     opened_recently: 0
     closed_recently: 0
-    stargazers: 3156
-    forks: 1610
+    stargazers: 3152
+    forks: 1617
     license: null
-    commits_year: 1387
-    commits_month: 54
-    updated: '2018-11-20'
+    commits_year: 1356
+    commits_month: 63
+    updated: '2018-12-07'
     description: 'Verbatim mirror of the git.drupal.org repository for Drupal core. Changes will not be pulled, and merge requests will not be accepted, if you want to contribute, go to Drupal.org: '
     topics: {  }
 -
@@ -371,15 +371,15 @@
     site: 'https://www.joomla.org/'
     repository: 'https://github.com/joomla/joomla-cms'
     docs: 'https://docs.joomla.org/'
-    open_issues: 876
-    opened_recently: 144
-    closed_recently: 315
-    stargazers: 2988
-    forks: 2784
+    open_issues: 907
+    opened_recently: 105
+    closed_recently: 242
+    stargazers: 3021
+    forks: 2799
     license: GPL-2.0
-    commits_year: 1280
-    commits_month: 52
-    updated: '2018-11-20'
+    commits_year: 1279
+    commits_month: 54
+    updated: '2018-12-07'
     description: 'Home of the Joomla! Content Management System'
     topics: [joomla, php, cms, content-management, php-cms, website-builder, multilingual-websites]
 -
@@ -387,15 +387,15 @@
     site: 'https://ezplatform.com/'
     repository: 'https://github.com/ezsystems/ezplatform'
     docs: 'https://doc.ezplatform.com/en/2.3/'
-    open_issues: 24
-    opened_recently: 5
-    closed_recently: 2
-    stargazers: 219
+    open_issues: 20
+    opened_recently: 2
+    closed_recently: 7
+    stargazers: 222
     forks: 132
-    license: NOASSERTION
-    commits_year: 142
-    commits_month: 1
-    updated: '2018-11-20'
+    license: ''
+    commits_year: 147
+    commits_month: 18
+    updated: '2018-12-07'
     description: 'Meta repository that pulls in all dependencies for clean distribution of eZ Platform'
     topics: [cms, symfony, php, ez-platform, composer-project, ez-platform-project-variant, symfony-application]
 -
@@ -405,13 +405,13 @@
     docs: 'https://typo3.org/help/documentation/'
     open_issues: 5
     opened_recently: 0
-    closed_recently: 2
-    stargazers: 583
-    forks: 344
-    license: NOASSERTION
-    commits_year: 2370
-    commits_month: 74
-    updated: '2018-11-20'
+    closed_recently: 7
+    stargazers: 585
+    forks: 349
+    license: ''
+    commits_year: 2287
+    commits_month: 44
+    updated: '2018-12-07'
     description: 'The TYPO3 Core - Enterprise Content Management System. Synchronized read-only mirror of http://git.typo3.org/Packages/TYPO3.CMS.git'
     topics: [cms, php, content-management, enterprise, typo3]
 -
@@ -419,15 +419,15 @@
     site: 'https://www.concrete5.org/'
     repository: 'https://github.com/concrete5/concrete5'
     docs: 'https://documentation.concrete5.org/'
-    open_issues: 694
-    opened_recently: 38
-    closed_recently: 95
-    stargazers: 531
-    forks: 357
+    open_issues: 709
+    opened_recently: 48
+    closed_recently: 109
+    stargazers: 534
+    forks: 359
     license: MIT
-    commits_year: 1736
-    commits_month: 72
-    updated: '2018-11-20'
+    commits_year: 1760
+    commits_month: 66
+    updated: '2018-12-07'
     description: 'Official repository for concrete5 development'
     topics: [php, concrete5, cms, framework]
 -
@@ -435,15 +435,15 @@
     site: 'https://contao.org/en/'
     repository: 'https://github.com/contao/contao'
     docs: 'https://docs.contao.org/en/'
-    open_issues: 56
-    opened_recently: 28
-    closed_recently: 46
-    stargazers: 28
-    forks: 25
+    open_issues: 43
+    opened_recently: 15
+    closed_recently: 54
+    stargazers: 31
+    forks: 24
     license: LGPL-3.0
-    commits_year: 1571
-    commits_month: 53
-    updated: '2018-11-20'
+    commits_year: 1519
+    commits_month: 81
+    updated: '2018-12-07'
     description: 'Contao 4 bundles'
     topics: [php, cms, symfony, contao, monorepo]
 -
@@ -452,14 +452,14 @@
     repository: 'https://github.com/umbraco/Umbraco-CMS'
     docs: 'https://our.umbraco.com/documentation/'
     open_issues: 384
-    opened_recently: 151
-    closed_recently: 209
-    stargazers: 2220
-    forks: 1691
+    opened_recently: 131
+    closed_recently: 170
+    stargazers: 2245
+    forks: 1706
     license: MIT
-    commits_year: 1142
-    commits_month: 43
-    updated: '2018-11-20'
+    commits_year: 3275
+    commits_month: 112
+    updated: '2018-12-07'
     description: 'The simple, flexible and friendly ASP.NET CMS used by more than 400.000 websites'
     topics: [umbraco-cms, cms, umbraco, csharp]
 -
@@ -467,15 +467,15 @@
     site: 'https://www.vapid.com/'
     repository: 'https://github.com/vapid/vapid'
     docs: 'https://docs.vapid.com/'
-    open_issues: 21
-    opened_recently: 3
+    open_issues: 23
+    opened_recently: 4
     closed_recently: 16
-    stargazers: 1187
-    forks: 37
+    stargazers: 1214
+    forks: 36
     license: MIT
-    commits_year: 126
-    commits_month: 12
-    updated: '2018-11-20'
+    commits_year: 130
+    commits_month: 9
+    updated: '2018-12-07'
     description: 'Vapid is an intentionally simple content management system built on the idea that you can create a custom dashboard without ever leaving the HTML.'
     topics: [cms, content-management-system, nodejs]
 -
@@ -483,15 +483,15 @@
     site: 'https://buttercms.com/'
     repository: 'https://github.com/ButterCMS/buttercms-js'
     docs: 'https://buttercms.com/docs/'
-    open_issues: 3
+    open_issues: 1
     opened_recently: 0
-    closed_recently: 1
-    stargazers: 84
+    closed_recently: 3
+    stargazers: 85
     forks: 9
-    license: NOASSERTION
-    commits_year: 8
+    license: ''
+    commits_year: 9
     commits_month: 2
-    updated: '2018-11-20'
+    updated: '2018-12-07'
     description: 'Node/JS API client for ButterCMS (https://buttercms.com)'
     topics: [nodejs-cms, nodejs, node-cms, node, express-js, hapi, cms, koa]
 -
@@ -499,15 +499,15 @@
     site: 'https://processwire.com/'
     repository: 'https://github.com/processwire/processwire'
     docs: 'https://processwire.com/docs/'
-    open_issues: 43
+    open_issues: 46
     opened_recently: 3
-    closed_recently: 2
-    stargazers: 444
+    closed_recently: 1
+    stargazers: 450
     forks: 102
-    license: NOASSERTION
-    commits_year: 143
+    license: ''
+    commits_year: 129
     commits_month: 0
-    updated: '2018-11-20'
+    updated: '2018-12-07'
     description: 'ProcessWire 3.x is a friendly and powerful open source CMS with a strong API. '
     topics: [processwire, cms, cmf, php]
 -
@@ -515,15 +515,15 @@
     site: 'https://bundles.kunstmaan.be/'
     repository: 'https://github.com/Kunstmaan/KunstmaanBundlesCMS'
     docs: 'https://kunstmaanbundlescms.readthedocs.io/en/latest/'
-    open_issues: 79
+    open_issues: 73
     opened_recently: 5
-    closed_recently: 42
-    stargazers: 284
+    closed_recently: 23
+    stargazers: 286
     forks: 175
     license: MIT
-    commits_year: 305
-    commits_month: 28
-    updated: '2018-11-20'
+    commits_year: 312
+    commits_month: 18
+    updated: '2018-12-07'
     description: 'An advanced yet user-friendly content management system, based on the full stack Symfony framework combined with a whole host of community bundles. It provides a full featured, multi-language CMS system with an innovative page and form assembling process, versioning, workflow, translation and media managers and much more.'
     topics: {  }
 -
@@ -531,15 +531,15 @@
     site: 'https://bolt.cm'
     repository: 'https://github.com/bolt/bolt'
     docs: 'https://docs.bolt.cm'
-    open_issues: 63
+    open_issues: 61
     opened_recently: 6
-    closed_recently: 31
-    stargazers: 3805
-    forks: 793
+    closed_recently: 25
+    stargazers: 3818
+    forks: 791
     license: MIT
-    commits_year: 364
-    commits_month: 8
-    updated: '2018-11-20'
+    commits_year: 326
+    commits_month: 3
+    updated: '2018-12-07'
     description: 'Bolt is a simple CMS written in PHP. It is based on Silex and Symfony components, uses Twig and either SQLite, MySQL or PostgreSQL.'
     topics: [php, cms, silex, symfony, bolt, cmf, symfony-application, twig, theme, mysql, sqlite, postgresql]
 -
@@ -547,15 +547,15 @@
     site: 'https://getkirby.com/'
     repository: 'https://github.com/getkirby/kirby'
     docs: 'https://getkirby.com/docs'
-    open_issues: 119
-    opened_recently: 1
-    closed_recently: 0
-    stargazers: 531
+    open_issues: 120
+    opened_recently: 2
+    closed_recently: 3
+    stargazers: 532
     forks: 84
-    license: NOASSERTION
-    commits_year: 25
+    license: ''
+    commits_year: 24
     commits_month: 0
-    updated: '2018-11-20'
+    updated: '2018-12-07'
     description: 'Kirby''s core system folder'
     topics: {  }
 -
@@ -563,14 +563,14 @@
     site: 'https://expressionengine.com/'
     repository: 'https://github.com/ExpressionEngine/ExpressionEngine'
     docs: 'https://docs.expressionengine.com/'
-    open_issues: 5
-    opened_recently: 5
-    closed_recently: 6
-    stargazers: 45
-    forks: 12
+    open_issues: 8
+    opened_recently: 8
+    closed_recently: 30
+    stargazers: 125
+    forks: 21
     license: Apache-2.0
-    commits_year: 1390
-    commits_month: 52
-    updated: '2018-11-20'
+    commits_year: 1298
+    commits_month: 47
+    updated: '2018-12-07'
     description: 'ExpressionEngine is a flexible, feature-rich, free open-source content management platform that empowers hundreds of thousands of individuals and organizations around the world to easily manage their web site.'
     topics: [expressionengine, eecms, cms, php, content-management-system, foss, open-source, apache2-license]

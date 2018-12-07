@@ -97,6 +97,8 @@ HELP
                     echo " - No commits were fetched \n";
                     continue;
 		}
+		
+		        $license = $info['license']['spdx_id'] != 'NOASSERTION' ? $info['license']['spdx_id'] : '';
 
                 $row = [
                     'name' => $item['name'],
@@ -105,7 +107,7 @@ HELP
                     'closed_recently' => $this->getRecentlyClosedIssues($reponame),
                     'stargazers' => $info['stargazers_count'],
                     'forks' => $info['forks_count'],
-                    'license' => $info['license']['spdx_id'],
+                    'license' => $license,
                     'commits_year' => $commits['year'],
                     'commits_month' => $commits['month'],
                     'updated' => date('Y-m-d'),
