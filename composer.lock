@@ -416,16 +416,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.9.0",
+            "version": "v2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "21fdabe2fc01e004e1966f200d900554876bc63c"
+                "reference": "ec74d6e300d78fbc896669c3ca57ef9719adc9c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/21fdabe2fc01e004e1966f200d900554876bc63c",
-                "reference": "21fdabe2fc01e004e1966f200d900554876bc63c",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/ec74d6e300d78fbc896669c3ca57ef9719adc9c6",
+                "reference": "ec74d6e300d78fbc896669c3ca57ef9719adc9c6",
                 "shasum": ""
             },
             "require": {
@@ -494,7 +494,7 @@
                 "php",
                 "queryobject"
             ],
-            "time": "2018-12-04T04:39:48+00:00"
+            "time": "2018-12-14T04:51:13+00:00"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -1786,16 +1786,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "90ff5556d4bd25954c272a22654e7bd43e8ab055"
+                "reference": "13bbbe16e4afcbbff7476cdcd1472a68950496a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/90ff5556d4bd25954c272a22654e7bd43e8ab055",
-                "reference": "90ff5556d4bd25954c272a22654e7bd43e8ab055",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/13bbbe16e4afcbbff7476cdcd1472a68950496a5",
+                "reference": "13bbbe16e4afcbbff7476cdcd1472a68950496a5",
                 "shasum": ""
             },
             "require": {
@@ -1841,7 +1841,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-12-02T10:14:51+00:00"
+            "time": "2018-12-18T10:35:13+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -2020,16 +2020,16 @@
         },
         {
             "name": "php-http/client-common",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/client-common.git",
-                "reference": "0b9ce659aa46aee106f8c66597ea0c070fcd9dff"
+                "reference": "efe327f4305813aa9025662259b78323d25b9948"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/client-common/zipball/0b9ce659aa46aee106f8c66597ea0c070fcd9dff",
-                "reference": "0b9ce659aa46aee106f8c66597ea0c070fcd9dff",
+                "url": "https://api.github.com/repos/php-http/client-common/zipball/efe327f4305813aa9025662259b78323d25b9948",
+                "reference": "efe327f4305813aa9025662259b78323d25b9948",
                 "shasum": ""
             },
             "require": {
@@ -2077,7 +2077,7 @@
                 "http",
                 "httplug"
             ],
-            "time": "2018-10-09T06:46:29+00:00"
+            "time": "2018-12-14T22:12:45+00:00"
         },
         {
             "name": "php-http/discovery",
@@ -2912,16 +2912,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v5.2.2",
+            "version": "v5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "9ef408febe2f12e70118ef61c6515035a06c5830"
+                "reference": "1fdf591c4b388e62dbb2579de89c1560b33f865d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/9ef408febe2f12e70118ef61c6515035a06c5830",
-                "reference": "9ef408febe2f12e70118ef61c6515035a06c5830",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/1fdf591c4b388e62dbb2579de89c1560b33f865d",
+                "reference": "1fdf591c4b388e62dbb2579de89c1560b33f865d",
                 "shasum": ""
             },
             "require": {
@@ -2940,7 +2940,7 @@
                 "symfony/finder": "^3.3|^4.0",
                 "symfony/monolog-bridge": "^3.0|^4.0",
                 "symfony/monolog-bundle": "^3.2",
-                "symfony/phpunit-bridge": "^3.3|^4.0",
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8",
                 "symfony/psr-http-message-bridge": "^0.3",
                 "symfony/security-bundle": "^3.3|^4.0",
                 "symfony/twig-bundle": "^3.3|^4.0",
@@ -2979,7 +2979,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2018-10-26T14:09:02+00:00"
+            "time": "2018-12-11T16:59:23+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5397,26 +5397,25 @@
         },
         {
             "name": "symfony/serializer-pack",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer-pack.git",
-                "reference": "35cea385ea44d1f40ec12571996bf768fbe409de"
+                "reference": "c5f18ba4ff989a42d7d140b7f85406e77cd8c4b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/serializer-pack/zipball/35cea385ea44d1f40ec12571996bf768fbe409de",
-                "reference": "35cea385ea44d1f40ec12571996bf768fbe409de",
+                "url": "https://api.github.com/repos/symfony/serializer-pack/zipball/c5f18ba4ff989a42d7d140b7f85406e77cd8c4b2",
+                "reference": "c5f18ba4ff989a42d7d140b7f85406e77cd8c4b2",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "^1.0",
                 "php": "^7.0",
                 "phpdocumentor/reflection-docblock": "^3.0|^4.0",
-                "symfony/cache": "^3.3|^4.0",
-                "symfony/property-access": "^3.3|^4.0",
-                "symfony/property-info": "^3.3|^4.0",
-                "symfony/serializer": "^3.3|^4.0"
+                "symfony/property-access": "*",
+                "symfony/property-info": "*",
+                "symfony/serializer": "*"
             },
             "type": "symfony-pack",
             "notification-url": "https://packagist.org/downloads/",
@@ -5424,7 +5423,7 @@
                 "MIT"
             ],
             "description": "A pack for the Symfony serializer",
-            "time": "2017-12-12T01:48:53+00:00"
+            "time": "2018-12-10T12:14:14+00:00"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -6085,16 +6084,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v5.7.15",
+            "version": "v5.7.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "860d20166ac0fa0be63b66798525fbb1e4a44493"
+                "reference": "799108d67cdc9843ed3569ae2989888826166381"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/860d20166ac0fa0be63b66798525fbb1e4a44493",
-                "reference": "860d20166ac0fa0be63b66798525fbb1e4a44493",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/799108d67cdc9843ed3569ae2989888826166381",
+                "reference": "799108d67cdc9843ed3569ae2989888826166381",
                 "shasum": ""
             },
             "require": {
@@ -6131,7 +6130,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2018-11-26T17:03:23+00:00"
+            "time": "2018-12-17T15:11:32+00:00"
         },
         {
             "name": "twig/extensions",
@@ -6190,32 +6189,32 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.5.0",
+            "version": "v2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "6a5f676b77a90823c2d4eaf76137b771adf31323"
+                "reference": "a11dd39f5b6589e14f0ff3b36675d06047c589b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/6a5f676b77a90823c2d4eaf76137b771adf31323",
-                "reference": "6a5f676b77a90823c2d4eaf76137b771adf31323",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a11dd39f5b6589e14f0ff3b36675d06047c589b1",
+                "reference": "a11dd39f5b6589e14f0ff3b36675d06047c589b1",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
                 "symfony/polyfill-ctype": "^1.8",
-                "symfony/polyfill-mbstring": "~1.0"
+                "symfony/polyfill-mbstring": "^1.3"
             },
             "require-dev": {
                 "psr/container": "^1.0",
                 "symfony/debug": "^2.7",
-                "symfony/phpunit-bridge": "^3.3"
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -6253,7 +6252,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-07-13T07:18:09+00:00"
+            "time": "2018-12-16T10:36:48+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -7001,25 +7000,25 @@
         },
         {
             "name": "symfony/debug-pack",
-            "version": "v1.0.6",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug-pack.git",
-                "reference": "630548c117a5f9e27d3385787641629945b6de50"
+                "reference": "09a4a1e9bf2465987d4f79db0ad6c11cc632bc79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug-pack/zipball/630548c117a5f9e27d3385787641629945b6de50",
-                "reference": "630548c117a5f9e27d3385787641629945b6de50",
+                "url": "https://api.github.com/repos/symfony/debug-pack/zipball/09a4a1e9bf2465987d4f79db0ad6c11cc632bc79",
+                "reference": "09a4a1e9bf2465987d4f79db0ad6c11cc632bc79",
                 "shasum": ""
             },
             "require": {
                 "easycorp/easy-log-handler": "^1.0.7",
                 "php": "^7.0",
-                "symfony/debug-bundle": "^3.3|^4.0",
+                "symfony/debug-bundle": "*",
                 "symfony/monolog-bundle": "^3.0",
-                "symfony/profiler-pack": "^1.0",
-                "symfony/var-dumper": "^3.3|^4.0"
+                "symfony/profiler-pack": "*",
+                "symfony/var-dumper": "*"
             },
             "type": "symfony-pack",
             "notification-url": "https://packagist.org/downloads/",
@@ -7027,7 +7026,7 @@
                 "MIT"
             ],
             "description": "A debug pack for Symfony projects",
-            "time": "2018-08-10T15:18:32+00:00"
+            "time": "2018-12-10T12:11:11+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -7145,16 +7144,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.9.0",
+            "version": "v1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "e873047b6022a0343c9354f65d5d47b9e351dd53"
+                "reference": "2ba2b563a6ca17cd7723b451b9ed4702ece9d8ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/e873047b6022a0343c9354f65d5d47b9e351dd53",
-                "reference": "e873047b6022a0343c9354f65d5d47b9e351dd53",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/2ba2b563a6ca17cd7723b451b9ed4702ece9d8ae",
+                "reference": "2ba2b563a6ca17cd7723b451b9ed4702ece9d8ae",
                 "shasum": ""
             },
             "require": {
@@ -7207,7 +7206,7 @@
                 "scaffold",
                 "scaffolding"
             ],
-            "time": "2018-11-03T18:25:11+00:00"
+            "time": "2018-12-20T19:51:03+00:00"
         },
         {
             "name": "symfony/panther",
@@ -7346,23 +7345,23 @@
         },
         {
             "name": "symfony/profiler-pack",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/profiler-pack.git",
-                "reference": "fa2e2dad522a3bef322196abad28ffce6d0fdbc5"
+                "reference": "99c4370632c2a59bb0444852f92140074ef02209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/profiler-pack/zipball/fa2e2dad522a3bef322196abad28ffce6d0fdbc5",
-                "reference": "fa2e2dad522a3bef322196abad28ffce6d0fdbc5",
+                "url": "https://api.github.com/repos/symfony/profiler-pack/zipball/99c4370632c2a59bb0444852f92140074ef02209",
+                "reference": "99c4370632c2a59bb0444852f92140074ef02209",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "symfony/stopwatch": "^3.3|^4.0",
-                "symfony/twig-bundle": "^3.3|^4.0",
-                "symfony/web-profiler-bundle": "^3.3|^4.0"
+                "symfony/stopwatch": "*",
+                "symfony/twig-bundle": "*",
+                "symfony/web-profiler-bundle": "*"
             },
             "type": "symfony-pack",
             "notification-url": "https://packagist.org/downloads/",
@@ -7370,7 +7369,7 @@
                 "MIT"
             ],
             "description": "A pack for the Symfony web profiler",
-            "time": "2017-12-12T01:48:24+00:00"
+            "time": "2018-12-10T12:11:44+00:00"
         },
         {
             "name": "symfony/stopwatch",
@@ -7424,22 +7423,22 @@
         },
         {
             "name": "symfony/test-pack",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/test-pack.git",
-                "reference": "94d1c2b02f137201cd6a68d290caa38fe3817cba"
+                "reference": "1792b80cc2da5310e84afa983682b71dfc409d17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/test-pack/zipball/94d1c2b02f137201cd6a68d290caa38fe3817cba",
-                "reference": "94d1c2b02f137201cd6a68d290caa38fe3817cba",
+                "url": "https://api.github.com/repos/symfony/test-pack/zipball/1792b80cc2da5310e84afa983682b71dfc409d17",
+                "reference": "1792b80cc2da5310e84afa983682b71dfc409d17",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "symfony/browser-kit": "^3.3|^4.0",
-                "symfony/css-selector": "^3.3|^4.0",
+                "symfony/browser-kit": "*",
+                "symfony/css-selector": "*",
                 "symfony/panther": "*",
                 "symfony/phpunit-bridge": "*"
             },
@@ -7449,7 +7448,7 @@
                 "MIT"
             ],
             "description": "A pack for functional and end-to-end testing within a Symfony app",
-            "time": "2018-09-25T09:21:56+00:00"
+            "time": "2018-12-10T12:13:08+00:00"
         },
         {
             "name": "symfony/web-profiler-bundle",

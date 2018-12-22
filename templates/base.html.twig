@@ -38,13 +38,20 @@
                     min-width: 13rem;
                 }
 
+                .navbar span {
+                    color: #FFF;
+                    font-size: 0.8rem;
+                    line-height: 1rem;
+                    margin-top: 0.4rem;
+                }
+
             </style>
         {% endblock %}
     </head>
     <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="/">Stiff competition</a>
+        <a class="navbar-brand" href="/">Stiff competition</a> <span>{% block updated %}{% endblock %}</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
 
+{% block updated %}Updated on {{ data|first['updated'] }}{% endblock %}
+
 {% block body %}
 
     <h1>Stiff competition!</h1>
