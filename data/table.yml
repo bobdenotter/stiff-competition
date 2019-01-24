@@ -17,8 +17,8 @@
 -
     name: Gatsby
     site: 'https://www.gatsbyjs.org/'
-    repository: 'https://www.gatsbyjs.org/docs/'
-    docs: 'https://github.com/gatsbyjs/gatsby'
+    repository: 'https://github.com/gatsbyjs/gatsby'
+    docs: 'https://www.gatsbyjs.org/docs/'
     open_issues: 12
     opened_recently: 8
     closed_recently: 22
@@ -43,7 +43,7 @@
     license: MIT
     commits_year: 847
     commits_month: 169
-    updated: '2019-01-24'
+    updated: '2019-01-01'
     description: '🍀 Bolt 4 prototype'
     topics: [php, cms, symfony, opensource, content-management-system, decoupled, headless, api, vue, twig, doctrine, multilingual, api-platform, kakunin]
 -

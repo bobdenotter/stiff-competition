@@ -86,28 +86,21 @@ HELP
                     continue;
                 }
 
-                $output->writeln('[r]', OutputInterface::VERBOSITY_VERBOSE);
+//                $output->writeln('[r]', OutputInterface::VERBOSITY_VERBOSE);
 
                 $reponame = $this->getReponame($item['repository']);
 
-                $output->writeln('[i]' . $reponame, OutputInterface::VERBOSITY_VERBOSE);
-
                 $info = $this->getInfo($reponame);
-                $output->writeln('[i]' . $reponame, OutputInterface::VERBOSITY_VERBOSE);
-
-                $output->writeln('[c]', OutputInterface::VERBOSITY_VERBOSE);
 
                 $commits = $this->getCommits($reponame);
 
-		// Sometimes the commits aren't fetched correctly. If so, skip.
-		if ( (int) $commits['year'] === 0) {
-                    echo " - No commits were fetched \n";
-                    continue;
-		}
-		
-		$license = $info['license']['spdx_id'] != 'NOASSERTION' ? $info['license']['spdx_id'] : '';
+                // Sometimes the commits aren't fetched correctly. If so, skip.
+                if ( (int) $commits['year'] === 0) {
+                            echo " - No commits were fetched \n";
+                            continue;
+                }
 
-                $output->writeln('[x]', OutputInterface::VERBOSITY_VERBOSE);
+                $license = $info['license']['spdx_id'] != 'NOASSERTION' ? $info['license']['spdx_id'] : '';
 
                 $row = [
                     'name' => $item['name'],
