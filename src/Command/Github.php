@@ -86,9 +86,16 @@ HELP
                     continue;
                 }
 
+                $output->writeln('[r]', OutputInterface::VERBOSITY_VERBOSE);
+
                 $reponame = $this->getReponame($item['repository']);
 
+                $output->writeln('[i]' . $reponame, OutputInterface::VERBOSITY_VERBOSE);
+
                 $info = $this->getInfo($reponame);
+                $output->writeln('[i]' . $reponame, OutputInterface::VERBOSITY_VERBOSE);
+
+                $output->writeln('[c]', OutputInterface::VERBOSITY_VERBOSE);
 
                 $commits = $this->getCommits($reponame);
 
@@ -98,7 +105,9 @@ HELP
                     continue;
 		}
 		
-		        $license = $info['license']['spdx_id'] != 'NOASSERTION' ? $info['license']['spdx_id'] : '';
+		$license = $info['license']['spdx_id'] != 'NOASSERTION' ? $info['license']['spdx_id'] : '';
+
+                $output->writeln('[x]', OutputInterface::VERBOSITY_VERBOSE);
 
                 $row = [
                     'name' => $item['name'],
