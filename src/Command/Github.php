@@ -102,8 +102,11 @@ HELP
 
                 $license = $info['license']['spdx_id'] != 'NOASSERTION' ? $info['license']['spdx_id'] : '';
 
+                $slug = $slugify->slugify($item['name']);
+
                 $row = [
                     'name' => $item['name'],
+                    'slug' => $slug,
                     'open_issues' => $info['open_issues_count'],
                     'opened_recently' => $this->getRecentlyOpenedIssues($reponame),
                     'closed_recently' => $this->getRecentlyClosedIssues($reponame),
@@ -116,7 +119,7 @@ HELP
                 ];
 
                 $statistics = new Statistics();
-                $statistics->setName($slugify->slugify($item['name']))
+                $statistics->setName($slug)
                     ->setOpenIssues($row['open_issues'])
                     ->setOpenedRecently($row['opened_recently'])
                     ->setClosedRecently($row['closed_recently'])
@@ -140,8 +143,6 @@ HELP
 
         echo "\n";
 
-        $this->objectManager->flush();
-
         if (count($results) > 0) {
             $header = array_keys($results[0]);
 
@@ -154,6 +155,8 @@ HELP
 
         $this->configuration->set($config);
         $this->configuration->write();
+
+        $this->objectManager->flush();
     }
 
     private function getReponame($url)
