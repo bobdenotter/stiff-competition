@@ -6,6 +6,26 @@
 
     {{ dump(data) }}
 
+    <dl>
+        <dt>Name</dt>
+        <dd>{{ data.name }} / <a href="{{ data.site }}">{{ data.site }}</a></dd>
+        <dt>Description</dt>
+        <dd>{{ data.description }} </dd>
+        <dt>Topics</dt>
+        <dd>{% for topic in data.topics %}<span class="badge badge-secondary">{{ topic }}</span> {% endfor %}</dd>
+
+        <dt>Repository / Docs</dt>
+        <dd><a href="{{ data.repository|default() }}">{{ data.repository|default() }}</a> / <a href="{{ data.docs }}">{{ data.docs }}</a></dd>
+        <dt>Github issues</dt>
+        <dd>Open: {{ data.open_issues }}, recently opened: {{ data.opened_recently }}, recently closed: {{ data.closed_recently }}</dd>
+        <dt>Stargazers</dt>
+        <dd>Stargazers: {{ data.stargazers }}, forks: {{ data.forks }}</dd>
+        <dt>Commits</dt>
+        <dd>last year (12 months): {{ data.commits_year }}, last month: {{ data.commits_month }}</dd>
+
+
+    </dl>
+
 {% endblock %}
 
 {% block javascripts %}

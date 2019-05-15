@@ -27,7 +27,7 @@ class Details extends AbstractController
     {
 
         $context = [
-            'data' => $this->config->where('slug', $slug),
+            'data' => $this->config->where('slug', $slug)->first(),
         ];
 
         return $this->render('details.html.twig', $context);
