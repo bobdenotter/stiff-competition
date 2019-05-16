@@ -17,12 +17,13 @@
         <dt>Repository / Docs</dt>
         <dd><a href="{{ data.repository|default() }}">{{ data.repository|default() }}</a> / <a href="{{ data.docs }}">{{ data.docs }}</a></dd>
         <dt>Github issues</dt>
-        <dd>Open: {{ data.open_issues }}, recently opened: {{ data.opened_recently }}, recently closed: {{ data.closed_recently }}</dd>
+        <dd>Open: <code>{{ data.open_issues }}</code>, recently opened: <code>{{ data.opened_recently }}</code>, recently closed: <code>{{ data.closed_recently }}</code></dd>
         <dt>Stargazers</dt>
-        <dd>Stargazers: {{ data.stargazers }}, forks: {{ data.forks }}</dd>
+        <dd>Stargazers: <code>{{ data.stargazers }}</code>, forks: <code>{{ data.forks }}</code></dd>
         <dt>Commits</dt>
-        <dd>last year (12 months): {{ data.commits_year }}, last month: {{ data.commits_month }}</dd>
-
+        <dd>last year (12 months): <code>{{ data.commits_year }}</code>, last month: <code>{{ data.commits_month }}</code></dd>
+        <dt>License</dt>
+        <dd>{{ data.license }} </dd>
 
     </dl>
 
