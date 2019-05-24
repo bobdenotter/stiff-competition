@@ -36,7 +36,7 @@
             {% for columnname, column in header %}
             <td class="col-{{ columnname }}">
             {% if columnname in ['site', 'repository', 'docs'] %}
-                <a href="{{ row[columnname] }}">{{ row[columnname]|replace({'https://': '', 'github.com': '…'})|truncate(24) }}</a>
+                <a href="{{ row[columnname] }}">{{ row[columnname]|replace({'https://': '', 'github.com': '…', 'www.': ''})|truncate(24) }}</a>
             {% else %}
                 {{ row[columnname]|default('-')|join(', ')|truncate(120) }}
             {% endif %}
