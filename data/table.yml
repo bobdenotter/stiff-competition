@@ -712,3 +712,20 @@
     description: 'A CMS framework for Node.js that supports in-context editing, schema-driven content types, flexible widgets, and much more. Hint: start with the docs and use apostrophe-cli.'
     topics: [cms, cms-framework, node, javascript, apostrophe, nodejs, node-js]
     slug: apostrophe
+-
+    name: Eleventy
+    site: 'https://www.11ty.io'
+    repository: 'https://github.com/11ty/eleventy/'
+    docs: 'https://www.11ty.io/docs/'
+    open_issues: 0
+    opened_recently: 0
+    closed_recently: 0
+    stargazers: 0
+    forks: 0
+    license: ''
+    commits_year: 0
+    commits_month: 0
+    updated: ''
+    description: ''
+    topics: []
+    slug: eleventy
