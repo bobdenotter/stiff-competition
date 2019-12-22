@@ -25,7 +25,6 @@ class Details extends AbstractController
      */
     public function details(Request $request, string $slug)
     {
-
         $context = [
             'data' => $this->config->where('slug', $slug)->first(),
         ];

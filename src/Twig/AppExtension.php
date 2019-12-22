@@ -12,7 +12,9 @@ class AppExtension extends AbstractExtension
     public function getFilters(): array
     {
         return [
-            new TwigFilter('x', [$this, 'x'], ['is_safe' => ['html']]),
+            new TwigFilter('x', [$this, 'x'], [
+                'is_safe' => ['html'],
+            ]),
         ];
     }
 
