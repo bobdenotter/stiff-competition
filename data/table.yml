@@ -275,15 +275,15 @@
     site: 'https://ghost.org'
     repository: 'https://github.com/TryGhost/Ghost'
     docs: 'https://docs.ghost.org'
-    open_issues: 77
-    opened_recently: 19
-    closed_recently: 57
-    stargazers: 32140
-    forks: 6952
+    open_issues: 79
+    opened_recently: 21
+    closed_recently: 67
+    stargazers: 32158
+    forks: 6956
     license: MIT
-    commits_year: 1679
-    commits_month: 39
-    updated: '2019-12-22'
+    commits_year: 1689
+    commits_month: 49
+    updated: '2019-12-23'
     description: '👻 The #1 headless Node.js CMS for professional publishing'
     topics: [journalism, publishing, blogging, javascript, web-application, cms, nodejs, ember, ghost, headless-cms, jamstack]
     slug: ghost
