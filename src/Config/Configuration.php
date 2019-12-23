@@ -17,23 +17,17 @@ class Configuration
         $this->initialize();
     }
 
-    private function initialize()
+    private function initialize(): void
     {
         $this->data = Yaml::parseFile($this->filename);
     }
 
-    /**
-     * @return array
-     */
     public function get(): array
     {
         return $this->data;
     }
 
-    /**
-     * @param array $data
-     */
-    public function set(array $data)
+    public function set(array $data): void
     {
         $this->data = $data;
     }
@@ -41,7 +35,7 @@ class Configuration
     /**
      * Write Yaml data.
      */
-    public function write()
+    public function write(): void
     {
         $yaml = Yaml::dump($this->data);
 

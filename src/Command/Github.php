@@ -9,6 +9,7 @@ use App\Entity\Statistics;
 use Carbon\Carbon;
 use Cocur\Slugify\Slugify;
 use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Github\Client;
 use Github\Exception\ApiLimitExceedException;
 use Symfony\Component\Console\Command\Command;
@@ -30,14 +31,14 @@ class Github extends Command
     /** @var ObjectManager */
     private $objectManager;
 
-    public function __construct(Configuration $configuration, ObjectManager $objectManager)
+    public function __construct(Configuration $configuration, EntityManagerInterface $objectManager)
     {
         parent::__construct();
         $this->configuration = $configuration;
         $this->client = new Client();
 
         $token = getenv('GITHUB_SECRET');
-        if (!isset($token)) {
+        if (! isset($token)) {
             dd('Github token is not set.');
         }
         $this->client->authenticate($token, null, Client::AUTH_HTTP_TOKEN);
@@ -48,7 +49,7 @@ class Github extends Command
     /**
      * {@inheritdoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Update stuff from Github, using the API')
@@ -64,7 +65,7 @@ HELP
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): void
     {
         $config = $this->configuration->get();
 
@@ -95,12 +96,12 @@ HELP
                 $commits = $this->getCommits($reponame);
 
                 // Sometimes the commits aren't fetched correctly. If so, skip.
-                if ( (int) $commits['year'] === 0) {
-                            echo " - No commits were fetched \n";
-                            continue;
+                if ((int) $commits['year'] === 0) {
+                    echo " - No commits were fetched \n";
+                    continue;
                 }
 
-                $license = $info['license']['spdx_id'] != 'NOASSERTION' ? $info['license']['spdx_id'] : '';
+                $license = $info['license']['spdx_id'] !== 'NOASSERTION' ? $info['license']['spdx_id'] : '';
 
                 $slug = $slugify->slugify($item['name']);
 
@@ -212,11 +213,9 @@ HELP
 
         $commits = collect($this->client->api('repo')->activity($reponame[0], $reponame[1]));
 
-        $res = [
+        return [
             'year' => $commits->sum('total'),
             'month' => $commits->slice(-4)->sum('total'),
         ];
-
-        return $res;
     }
 }

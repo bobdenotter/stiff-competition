@@ -31,7 +31,7 @@ class Screenshot extends Command
     /**
      * {@inheritdoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Gather some screenshots')
@@ -47,17 +47,17 @@ HELP
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): void
     {
         $config = $this->configuration->get();
 
         $client = Client::createChromeClient();
 
-        foreach (collect($config)->sortBy('updated') as $key => $item) {
+        foreach (collect($config)->sortBy('updated') as $item) {
             echo $item['name'] . ' - ';
 
             foreach (['site', 'docs'] as $type) {
-                $crawler = $client->request('GET', $item[$type]);
+                $client->request('GET', $item[$type]);
                 $filename = sprintf('%s%s_%s.png', $this->basepath, $item['name'], $type);
                 $client->takeScreenshot($filename);
                 echo '.';

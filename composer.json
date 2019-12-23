@@ -36,7 +36,8 @@
         "symfony/maker-bundle": "^1.0",
         "symfony/profiler-pack": "*",
         "symfony/test-pack": "*",
-        "symfony/web-server-bundle": "*"
+        "symfony/web-server-bundle": "*",
+        "symplify/easy-coding-standard": "^7.1"
     },
     "config": {
         "preferred-install": {
