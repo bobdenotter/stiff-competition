@@ -729,3 +729,20 @@
     description: 'A simpler static site generator. An alternative to Jekyll. Transforms a directory of templates (of varying types) into HTML.'
     topics: [static-site-generator, documentation-tool, javascript, blog-engine, templates, eleventy]
     slug: eleventy
+-
+    name: Flextype
+    site: 'https://flextype.org/en'
+    repository: 'https://github.com/flextype/flextype'
+    docs: 'https://docs.flextype.org/en'
+    open_issues: 65
+    opened_recently: 8
+    closed_recently: 26
+    stargazers: 248
+    forks: 47
+    license: MIT
+    commits_year: 3288
+    commits_month: 149
+    updated: '2019-12-28'
+    description: 'Build fast, flexible, easier to manage websites with Flextype.'
+    topics: [php, cms, flat-file, flextype, content, content-management, php7, website-builder, twig, doctrine, flat-file-cms, flat-file-db]
+    slug: flextype
