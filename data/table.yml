@@ -443,7 +443,7 @@
 -
     name: 'Typo 3'
     site: 'https://typo3.org'
-    repository: 'https://github.com/TYPO3/TYPO3.CMS'
+    repository: 'https://github.com/TYPO3/typo3'
     docs: 'https://typo3.org/help/documentation'
     open_issues: 5
     opened_recently: 0
