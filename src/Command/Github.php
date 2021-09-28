@@ -142,7 +142,8 @@ HELP
         } catch (ApiLimitExceedException $exception) {
             echo "\nGithub API Limit reached!!\n";
         } catch (Exception $exception) {
-            echo "\nSome exception. Bailing!!\n";
+            echo "\nSome other exception. Bailing!!\n";
+            dump($exception);
         }
 
         echo "\n";
