@@ -10,6 +10,7 @@ use Carbon\Carbon;
 use Cocur\Slugify\Slugify;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\ORM\EntityManagerInterface;
+use Exception;
 use Github\Client;
 use Github\Exception\ApiLimitExceedException;
 use Symfony\Component\Console\Command\Command;
@@ -41,7 +42,7 @@ class Github extends Command
         if (! isset($token)) {
             dd('Github token is not set.');
         }
-        $this->client->authenticate($token, null, Client::AUTH_HTTP_TOKEN);
+        $this->client->authenticate($token, null, Client::AUTH_ACCESS_TOKEN);
 
         $this->objectManager = $objectManager;
     }
@@ -140,6 +141,8 @@ HELP
             }
         } catch (ApiLimitExceedException $exception) {
             echo "\nGithub API Limit reached!!\n";
+        } catch (Exception $exception) {
+            echo "\nSome exception. Bailing!!\n";
         }
 
         echo "\n";
